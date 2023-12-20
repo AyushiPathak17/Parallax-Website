@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.parallax-container-orb{
+    height: 100vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.parallax-orb {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ff5722, transparent);
+    border-radius: 50%;
+}
+
+.orb1 {
+    top: 25%;
+    left: 25%;
+    animation: float 4s infinite alternate;
+}
+
+.orb2 {
+    top: 40%;
+    left: 60%;
+    animation: float 2s infinite alternate;
+}
+
+.orb3 {
+    top: 70%;
+    left: 40%;
+    animation: float 3s infinite alternate;
+}
+
+.orb4 {
+    top: 10%;
+    right: 10%;
+    animation: float 3s infinite alternate-reverse;
+}
+
+.orb5 {
+    bottom: 15%;
+    left: 10;
+    animation: float 2s infinite alternate;
+}
+
+.orb6 {
+    top: 3%;
+    left: 3%;
+    animation: float 4s infinite alternate;
+}
+
+.orb7{
+    bottom: 5%;
+    right: 10%;
+    animation:float 4s infinite alternate ;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
